@@ -8,6 +8,7 @@
     background: linear-gradient(to right, rgba($color-green-dark,.8), rgba($color-white-2,.8));
     border-right: none !important;
     border: 1.5rem solid $color-green-light-2;
+    margin-bottom: 8rem;
 
     @media only screen and (max-width: $bp-large) {
         border-right: 1.5rem solid $color-green-light-2 !important;
@@ -23,11 +24,19 @@
 
 .input {
     height: 4.5rem;
-    width: 26rem;
+    width: 45rem;
     margin-right: 3rem;
     padding-left: 1rem;
     border: 4px solid transparent;
     transition: border .2s;
+
+    @media only screen and (max-width: $bp-medium-extra) {
+        width: 26rem;
+    }
+
+    @media only screen and (max-width: $bp-small-extra) {
+        margin-right: 0;
+    }
 
     @media only screen and (max-width: $bp-smallest) {
         margin-right: 0;
@@ -59,7 +68,7 @@
     color: $color-green-dark;
     transition: all .3s;
 
-    @media only screen and (max-width: $bp-small) {
+    @media only screen and (max-width: $bp-small-extra) {
         margin-top: 2rem;
     }
 

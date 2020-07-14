@@ -68,8 +68,6 @@ const result = document.querySelector('.results__temperature span');
 const form = document.querySelector('.form');
 const info = document.querySelector('.results__info p');
 const infoTempHeight = document.querySelector('.temp-info');
-const html = document.querySelector('html');
-const body = document.querySelector('body');
 const sectionResults = document.querySelector('.section-results');
 const btn = document.querySelector('.check-weather');
 const advice = document.querySelector('.advice');
@@ -112,9 +110,8 @@ const showRes = () => {
         weatherRes.classList.add('show-result');
         document.body.classList.add('change-bg');
         advice.classList.add('typingEffect');
-        html.style.height = 'auto';
-        body.style.height = 'auto';
         sectionResults.style.display = 'flex';
+        input.style.width = '26rem';
 
         setTimeout(function(){
             weatherRes.classList.remove('show-result');
@@ -225,6 +222,7 @@ const controlSearch = async () => {
                 result.textContent = 'Ups...';
                 info.textContent = 'Niepoprawna nazwa miasta';
                 infoTempHeight.textContent = 'Spróbuj jeszcze raz :)'
+                advice.textContent = 'Znajdź swoje miasto :D :D :D'
             }
 
         } catch (err) {

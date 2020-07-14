@@ -10,7 +10,7 @@
 };
 
 .slogan {
-    margin-top: 5rem;
+    margin-top: 8rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -26,6 +26,7 @@
     &--sub {
         display: flex;
         flex-direction: row;
+        margin-bottom: 1.5rem;
     }
 
     @media only screen and (min-width: $bp-largest) {
@@ -44,5 +45,6 @@
 
     @media only screen and (max-width: $bp-small) {
         width: 95%;
+        margin-top: 6rem;
     }
 }
