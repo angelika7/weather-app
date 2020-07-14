@@ -1,0 +1,70 @@
+.form {
+    height: 18rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 4rem;
+    background: linear-gradient(to right, rgba($color-green-dark,.8), rgba($color-white-2,.8));
+    border-right: none !important;
+    border: 1.5rem solid $color-green-light-2;
+
+    @media only screen and (max-width: $bp-large) {
+        border-right: 1.5rem solid $color-green-light-2 !important;
+    }
+
+    @media only screen and (max-width: $bp-small-extra) {
+        flex-direction: column;
+        height: 21rem;
+        border-right: none !important;
+        border-left: none !important;
+    }
+}
+
+.input {
+    height: 4.5rem;
+    width: 26rem;
+    margin-right: 3rem;
+    padding-left: 1rem;
+    border: 4px solid transparent;
+    transition: border .2s;
+
+    @media only screen and (max-width: $bp-smallest) {
+        margin-right: 0;
+    }
+
+    &:focus {
+        outline: none;
+        border: 4px solid $color-green-dark-3;
+    }
+
+    &::placeholder {
+        font-size: 1.3rem;
+        font-family: 'Roboto', sans-serif;
+        letter-spacing: .2rem;
+        color: $color-green-dark-3;
+    }
+}
+
+.check-weather {
+    height: 4.5rem;
+    width: 18rem;
+    border: 1px solid transparent;
+    background-color: $color-green-light-2;
+    border-radius: 2rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: .2rem;
+    color: $color-green-dark;
+    transition: all .3s;
+
+    @media only screen and (max-width: $bp-small) {
+        margin-top: 2rem;
+    }
+
+    &:hover {
+        cursor: pointer;
+        background-color: $color-white-3;
+    }
+}

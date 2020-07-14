@@ -1,0 +1,33 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;  /* w projekcie 1rem = 10px --> 10/16 = 62.5%; */
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+}
+
+body {
+    height: 100%;
+    box-sizing: border-box;
+    background-position: center;
+    background-image: url(./../img/header.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+// Break points
+$bp-largest: 112.5em;     // min. 1800px
+$bp-large: 68.75em;    // 1100px
+$bp-medium: 62.5em;   // 1000px
+$bp-medium-extra: 58.75em;   // 940px
+$bp-small: 50em;     // 800px
+$bp-small-extra: 35em; // 560px
+$bp-smallest: 28.75em; // 460px
+

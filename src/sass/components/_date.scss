@@ -1,0 +1,16 @@
+.date {
+    font-size: 1.7rem;
+    color: $color-white-3;
+    letter-spacing: .5rem;
+    position: absolute;
+    top: 3rem;
+    left: 3rem;
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 1.4rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 1rem;
+    }
+}

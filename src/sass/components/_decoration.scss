@@ -1,0 +1,13 @@
+.decoration {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 15rem 29rem ;
+    margin-top: 2rem;
+
+    @media only screen and (max-width: $bp-small) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

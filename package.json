@@ -1,0 +1,22 @@
+{
+  "name": "weatherapp",
+  "version": "1.0.0",
+  "description": "Your WeatherApp",
+  "main": "main.js",
+  "scripts": {
+    "compile:sass": "node-sass src/sass/main.scss public/css/style.css -w",
+    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" public/css/style.css -o public/css/style.prefix.css",
+    "minifyJS": "terser src/js/main.js --compress --mangle --output public/js/bundle.min.js"
+  },
+  "author": "Angelika Chochorowska",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.8.5",
+    "node-sass": "^4.13.1",
+    "postcss-cli": "^7.1.1",
+    "terser": "^4.8.0"
+  }
+}

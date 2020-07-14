@@ -1,0 +1,76 @@
+.content {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-top: 5rem;
+
+
+    @media only screen and (max-width: $bp-large) {
+        flex-direction: column;
+    }
+
+}
+
+.section-check-weather {
+    align-items: flex-end;
+    justify-self: flex-end;
+    align-self: center;
+    width: 70%;
+
+    @media only screen and (max-width: $bp-small) {
+        width: 90%;
+    }
+
+    @media only screen and (max-width: $bp-small-extra) {
+        width: 100%;
+    }
+}
+
+.section-results {
+    display: none;
+    justify-self: flex-start;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 10rem;
+
+    @media only screen and (max-width: $bp-large) {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.results {
+    position: relative;
+    width: 90%; 
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    background-color: $color-board-results;
+    opacity: .85;
+    box-shadow: 0 2rem 8rem rgba(0,0,0,.5);
+    border: .3rem solid $color-white-3;
+    border-left: none;
+    padding-bottom: 8rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+
+    @media only screen and (max-width: $bp-large) {
+        width: 70%;
+        margin: 5rem auto;
+        border-left: .3rem solid $color-white-3;
+    }
+
+    @media only screen and (max-width: $bp-small-extra) {
+        width: 95%;
+    }
+
+    &__city {
+        margin-top: 8rem;
+        margin-bottom: 3.5rem;
+    }
+
+    &__temperature {
+        margin-bottom: 4rem;
+    }
+
+}

@@ -1,0 +1,125 @@
+#big-tree {
+    animation-name: bigTree;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+}
+
+@keyframes bigTree {
+    50% {
+        transform: translateX(1rem);
+        fill: $color-green-dark-3;
+    }
+
+    75% {
+        transform: translateX(-1rem);
+    }
+}
+
+.sun-animate {
+    animation-name: sunRound;
+    @include sun-animation;
+}
+
+.sun-color {
+    animation-name: sunColor;
+    animation-direction: alternate;
+    @include sun-animation;
+}
+
+@keyframes sunRound {
+    50% {
+        transform: scale(1.05) translate(1rem);
+        fill: $color-sun;
+    }
+}
+
+@keyframes sunColor {
+    40% {
+        fill: $color-sun;
+    }
+}
+
+///////////////////////////////////////////////////////
+
+.change-bg {
+    animation-name: bgOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-duration: 1.1s;
+}
+
+@keyframes bgOpacity {
+    0% {
+        opacity: .1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+///////////////////////////////////////////////////////
+
+.show-result {
+    animation-name: showResult;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    animation-duration: 1.1s;
+}
+
+@keyframes showResult {
+    0% {
+        transform: translateX(-100%)
+    }
+
+    100% {
+        transform: translateX(0)
+    }
+}
+
+/////////////////////////////////////////////////////
+
+.change-light {
+    animation-name: changeLight;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+    animation-duration: .5s;
+    animation-direction: alternate;
+}
+
+@keyframes changeLight {
+    0% {
+        fill: black;
+        transform: translateX(-4rem)
+    }
+
+    50% {
+        fill: $color-white-3;
+        transform: translateX(0)
+    }
+
+    100% {
+        fill: yellow;
+        transform: translateX(4rem)
+    }
+}
+
+/////////////////////////////////////////////
+
+.typingEffect {
+    animation: 
+    typing 4.5s steps(34, end) 1.2s 1,
+    blinkBorder .2s step-end infinite;
+}
+
+@keyframes typing {
+    from {width: 0;}
+    to {width: 100%;}
+}
+
+@keyframes blinkBorder {
+    from, to { border-color: transparent }
+  50% { border-color: yellow }
+}

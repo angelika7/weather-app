@@ -1,0 +1,138 @@
+.heading-primary {
+    font-family: 'Piedra', cursive;
+    font-size: 4rem;
+    font-weight: 400;
+    line-height: 7rem;
+    letter-spacing: .5rem;
+    text-align: center;
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 3.5rem;
+    }
+
+    @media only screen and (max-width: $bp-small-extra) {
+        font-size: 3rem;
+        line-height: 5rem;
+        letter-spacing: .4rem;
+        text-align: center;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        font-size: 2.2;
+        letter-spacing: .3rem;
+        line-height: 3.7rem;
+    }
+}
+
+.heading-secondary {
+    font-size: 1.7rem;
+    font-weight: 100;
+    line-height: 3.5rem;
+    letter-spacing: 1rem;
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 1.3rem;
+        line-height: 2.5rem;
+        letter-spacing: .7rem;
+        text-align: center;
+    }
+
+    @media only screen and (max-width: $bp-small-extra) {
+        font-size: 1.1rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        font-size: .9rem;
+        letter-spacing: .3rem;
+        line-height: 2rem;
+    }
+}
+
+.advice {
+    font-size: 2rem;
+    color: $color-white-3;
+    align-self: center;
+    font-family: 'Caveat', cursive;
+    display: inline-block;
+    overflow: hidden;
+    border-right: 2px solid $color-yellow;
+    letter-spacing: .3rem;
+    margin: 0 auto;
+    white-space: nowrap;
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 1.5rem
+    }
+}
+
+span {
+    font-size: 5rem;
+    line-height: 3rem;
+    letter-spacing: .5rem;
+    font-weight: 700;
+    color: $color-white-2;
+
+    @media only screen and (max-width: $bp-small-extra) {
+        font-size: 4rem
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        font-size: 3.5rem;
+    }
+
+}
+
+p {
+    font-size: 2rem;
+    line-height: 3rem;
+    letter-spacing: .5rem;
+    font-weight: 100;
+    color: $color-white-2;
+    text-align: center;
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 1.8rem
+    }
+
+    @media only screen and (max-width: $bp-small-extra) {
+        font-size: 1.5rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        font-size: 1.2rem;
+    }
+}
+
+.temp-info {
+    font-size: 1.5rem;
+    letter-spacing: 1rem;
+    line-height: 4rem;
+    color: $color-white-3;
+    margin-top: 1rem;
+
+    @media only screen and (max-width: $bp-small) {
+        font-size: 1.3rem;
+        line-height: 2.8rem;
+    }
+
+    @media only screen and (max-width: $bp-small-extra) {
+        font-size: 1.1rem;
+        line-height: 2.4rem;
+    }
+
+    @media only screen and (max-width: $bp-smallest) {
+        font-size: .9rem;
+        line-height: 2rem;
+    }
+}
+
+.paragraph {
+    font-size: 1rem;
+    line-height: 2rem;
+    letter-spacing: .2rem;
+    color: $color-white-2;
+
+    @media only screen and (max-width: $bp-smallest) {
+        font-size: .8rem;
+    }
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <!--Icons made by <a href="http://www.absurd.design/" title="absurd.design">absurd.design</a> from <a href="https://www.absurd.design/" title="absurd.design">absurd.design</a>
+        Icons made by <a href="http://www.freepik.com/" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+        Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your WeatherApp</title>
+    <link href="https://fonts.googleapis.com/css2?family=Piedra&family=Caveat&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <link rel="manifest" href="./img/site.webmanifest">
+    <link rel="stylesheet" href="./css/style.prefix.css">
+</head>
+<body>
+    <header class="header">
+        <div class="slogan">
+            <div class="slogan--sub">
+                <span class="trees"></span>
+                <h1 class="heading-primary">What's The Weather?</h1>
+                <span class="sunny"></span>
+            </div>
+            <h2 class="heading-secondary">- Twoja kieszonkowa aplikacja pogodowa</h2>
+        </div>
+    </header>
+    <main class="content">
+        <section class="section-check-weather">
+            <form action="*" class="form">
+                <input type="text" class="input" aria-label="Wpisz miasto" placeholder="Wpisz miasto">
+                <button class="check-weather">Sprawdź pogodę</button>
+            </form>
+        </section>
+        <section class="section-results">
+            <div class="results">
+                <div class="date"></div>
+                <div class="results__city"><p></p></div>
+                <div class="results__temperature"><span></span></div>
+                <div class="results__info">
+                    <p></p>
+                    <p class="temp-info"></p>
+                </div>
+                <div class="decoration">
+                    <div class="idea"></div>
+                    <p class="advice">Dobra pogoda na spacer? :)</p>
+                </div>
+                
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <p class="paragraph">&copy 2020. Aplikację wykonała Angelika Chochorowska. Wszystkie prawa zastrzeżone.</p>
+    </footer>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script type="module" src="js/bundle.min.js"></script>
+</body>
+</html>

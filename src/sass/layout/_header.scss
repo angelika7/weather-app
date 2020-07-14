@@ -1,0 +1,48 @@
+.header {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    @media only screen and (max-width: $bp-large) {
+        justify-content: center;
+    }
+};
+
+.slogan {
+    margin-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 20rem;
+    width: 90rem;
+    padding: 6rem 3rem;
+    background: linear-gradient(rgba($color-green-light-2,.9), rgba($color-grey-dark-2,.75));
+    box-shadow: 0 2rem 6rem rgba(0,0,0,.3);
+    border: .5rem solid $color-board-results;
+    border-right: none;
+
+    &--sub {
+        display: flex;
+        flex-direction: row;
+    }
+
+    @media only screen and (min-width: $bp-largest) {
+        height: 28rem;
+        width: 100rem;
+    }
+
+    @media only screen and (max-width: $bp-large) {
+        border-right: .5rem solid $color-board-results;
+        width: 80rem;
+    }
+
+    @media only screen and (max-width: 640px) {
+        padding: 13rem 3rem;
+    }
+
+    @media only screen and (max-width: $bp-small) {
+        width: 95%;
+    }
+}
