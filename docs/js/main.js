@@ -1,5 +1,5 @@
 // AJAX import HTML file
-fetch("../../src/html/idea.html")
+fetch("html/idea.html")
   .then(response => {
     return response.text()
   })
@@ -7,7 +7,7 @@ fetch("../../src/html/idea.html")
     document.querySelector('.idea').innerHTML = data;
   });
 
-fetch("../../src/html/trees.html")
+fetch("html/trees.html")
   .then(response => {
     return response.text()
   })
@@ -15,7 +15,7 @@ fetch("../../src/html/trees.html")
     document.querySelector('.trees').innerHTML = data;
   });
 
-fetch("../../src/html/sunny.html")
+fetch("html/sunny.html")
   .then(response => {
     return response.text()
   })
