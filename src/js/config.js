@@ -1,1 +1,0 @@
-export const USER_KEY = 'e74642574104911219ff9c68ca177cda';
