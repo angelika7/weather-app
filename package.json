@@ -5,8 +5,7 @@
   "main": "main.js",
   "scripts": {
     "compile:sass": "node-sass src/sass/main.scss docs/css/style.css -w",
-    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" docs/css/style.css -o docs/css/style.prefix.css",
-    "minifyJS": "terser src/js/main.js --output docs/js/bundle.min.js --compress --mangle"
+    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" docs/css/style.css -o docs/css/style.prefix.css"
   },
   "author": "Angelika Chochorowska",
   "license": "ISC",
