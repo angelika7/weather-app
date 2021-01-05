@@ -1,4 +1,4 @@
-import { key } from '../../docs/js/config.js';
+import { key } from './config.js';
 const APIkey = key;
 
 // AJAX import HTML file
