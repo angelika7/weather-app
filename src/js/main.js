@@ -1,6 +1,3 @@
-import { key } from '../../docs/js/config.js';
-const APIkey = key;
-
 // AJAX import HTML file
 fetch("../src/html/idea.html")
   .then(response => {
@@ -40,9 +37,9 @@ class Search {
             let url = null;
 
             if (location.protocol === 'http:') {
-                url = `http://api.openweathermap.org/data/2.5/weather?q=${this.query}&APPID=${APIkey}`;
+                url = `http://api.openweathermap.org/data/2.5/weather?q=${this.query}&APPID=${USER_KEY}`;
             } else {
-                url = `https://api.openweathermap.org/data/2.5/weather?q=${this.query}&APPID=${APIkey}`;
+                url = `https://api.openweathermap.org/data/2.5/weather?q=${this.query}&APPID=${USER_KEY}`;
             }
 
             let res = await fetch(url)
