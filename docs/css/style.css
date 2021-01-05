@@ -110,7 +110,6 @@ body {
   height: auto;
   box-sizing: border-box;
   background-position: center;
-  background-image: url(./../img/header.jpeg);
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -387,7 +386,6 @@ p {
   align-items: center;
   height: 20rem;
   width: 90rem;
-  padding: 6rem 3rem;
   background: linear-gradient(rgba(86, 183, 76, 0.9), rgba(64, 64, 64, 0.75));
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.3);
   border: 0.5rem solid #021200;

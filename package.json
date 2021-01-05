@@ -4,9 +4,9 @@
   "description": "Your WeatherApp",
   "main": "main.js",
   "scripts": {
-    "compile:sass": "node-sass src/sass/main.scss public/css/style.css -w",
-    "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" public/css/style.css -o public/css/style.prefix.css",
-    "minifyJS": "terser src/js/main.js --compress --mangle --output public/js/bundle.min.js"
+    "compile:sass": "node-sass src/sass/main.scss docs/css/style.css -w",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' docs/css/style.css -o docs/css/style.prefix.css",
+    "minifyJS": "terser src/js/main.js --compress --mangle --output docs/js/bundle.min.js"
   },
   "author": "Angelika Chochorowska",
   "license": "ISC",
